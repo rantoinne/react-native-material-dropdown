@@ -53,6 +53,8 @@ export default StyleSheet.create({
 
   item: {
     textAlign: 'left',
+    // flexDirection: 'row',
+    // flexWrap: 'wrap'
   },
 
   scroll: {
