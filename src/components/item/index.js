@@ -14,8 +14,8 @@ export default class DropdownItem extends PureComponent {
 
   static propTypes = {
     ...TouchableOpacity.propTypes,
-
     index: PropTypes.number.isRequired,
+    testID: PropTypes.string,
   };
 
   constructor(props) {
@@ -33,7 +33,7 @@ export default class DropdownItem extends PureComponent {
   }
 
   render() {
-    let { children, style, index, ...props } = this.props;
+    let { children, style, index, testID, ...props } = this.props;
 
     return (
       <TouchableOpacity
@@ -41,6 +41,7 @@ export default class DropdownItem extends PureComponent {
 
         style={[styles.container, style]}
         onPress={this.onPress}
+        testID={testID}
       >
         {children}
       </TouchableOpacity>
