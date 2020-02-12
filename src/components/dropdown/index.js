@@ -756,6 +756,7 @@ export default class Dropdown extends PureComponent {
                 keyExtractor={this.keyExtractor}
                 scrollEnabled={visibleItemCount < itemCount}
                 contentContainerStyle={styles.scrollContainer}
+                testID={`${testID}-flat-list`}
               />
             </View>
           </Animated.View>
